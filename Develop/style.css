@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-
+/*STYLING THE PAGE*/
 html,
 body,
 .wrapper {
@@ -29,7 +29,7 @@ header {
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/*styling the card*/
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -71,7 +71,7 @@ header {
   display: block;
   clear: both;
 }
-
+/*styling the button*/
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -117,7 +117,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
-
+/*queries for smaller screens*/
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
