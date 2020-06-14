@@ -11,3 +11,5 @@ When prompted to enter your password length:
 -if you type a number that is not between 8 and 128, you will be prompted to do so.
 -if you type a character other than a number you will be prompted the password length is to be provided by a number
 -if you do not confirm at least one character type after providing a number between 8 and 128, you will be prompted to do so
+
+Follow the link here! https://barmstrong1188.github.io/My-password-maker/
