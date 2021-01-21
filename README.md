@@ -1,6 +1,12 @@
 # Password Generator
 
+## Table of Contents
 
+* [Link to Deployed App](#link-to-deplyoed-app)
++ [User Story](#user-story)
+- [Description](#description)
+* [Technologies Used](#technologies-used)
++ [Screenshot](#screenshot)
 ## Link to Deployed App:
 https://barmstrong1188.github.io/My-password-maker/
 
