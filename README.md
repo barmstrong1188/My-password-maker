@@ -1,10 +1,10 @@
-## Password Generator
+# Password Generator
 
 
-# Link to Deployed App:
+## Link to Deployed App:
 https://barmstrong1188.github.io/My-password-maker/
 
-# Description
+## Description
 This app created a randomly generated password based on the credentials provided.
 <br><br>
 When you click on the Make Password button, you are presented with a series of prompts:<br>
@@ -17,11 +17,11 @@ When prompted to enter your password length:<br>
 -if you type a character other than a number you will be prompted the password length is to be provided by a number<br>
 -if you do not confirm at least one character type after providing a number between 8 and 128, you will be prompted to do so<br>
 
-# Techonologies Used
+## Techonologies Used
 -Javascript <br>
 -CSS <br>
 -HTML 
 
-# Screenshot
+## Screenshot
 ![password-generator-screenshot](https://user-images.githubusercontent.com/65680645/84585948-dff7e200-ade2-11ea-8ce2-31a51ec146ee.png)
 
