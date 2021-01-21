@@ -8,7 +8,7 @@
 * [Technologies Used](#technologies-used)
 + [Screenshot](#screenshot)
 ## Link to Deployed App:
-https://barmstrong1188.github.io/My-password-maker/
+[Brandon's Password Maker](https://barmstrong1188.github.io/My-password-maker/)
 
 ## User Story
 
