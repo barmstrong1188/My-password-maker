@@ -1,3 +1,16 @@
+const characterAmountRange = document.getElementById('characterAmountRange');
+const characterAmountNumber = document.getElementById('characterAmountNumber');
+
+characterAmountNumber.addEventListener('input', syncCharacterAmount);
+characterAmountRange.addEventListener('input', syncCharacterAmount);
+
+   // syncs the range input amount together with the number input
+  function syncCharacterAmount(e) {
+    const value = e.target.value
+    characterAmountNumber.value = value
+    characterAmountRange.value = value
+  }
+  
 // Array of special characters to be included in password
 var specialCharacters = [
     '@',
@@ -232,7 +245,7 @@ function getRandom(arr) {
     passwordText.value = password;
   }
   
-  
+
   // Add event listener to generate button
   generateBtn.addEventListener('click', writePassword);
   
