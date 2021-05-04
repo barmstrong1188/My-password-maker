@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Brandon's Password Generator</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Play&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../My-password-maker/assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/a2051d86f6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Brandon's Password Generator</h1>
+        <h1><i class="fas fa-user-lock"></i> Brandon's Password Generator</h1>
       </header>
       <div class="card">
         <div class="card-body">
@@ -26,28 +27,28 @@
             <div class="number-of-characters">
               <label for="characterAmountNumber">Number of Characters</label>  
             <div class="number-slider">
-              <input type="range" min="8" max="128" value="8" id="characterAmountRange"/>
-              <input type="number" min="8" max="128" value="8" id="characterAmountNumber"/>
+              <input class="number-range" type="range" min="8" max="128" value="8" id="characterAmountRange"/>
+              <input class="number-input" type="number" min="8" max="128" value="8" id="characterAmountNumber"/>
             </div>
           </div>
             <div class="checkboxes">
               <div class="include-uppercase">
               <label for="includeUppercase">Include Uppercase</label>
-              <input type="checkbox">
+              <input type="checkbox" id="includeUppercase">
             </div>
             <div class="include-numbers">
-              <label for="includeSymbols">Include Numbers</label>
-              <input type="checkbox">
+              <label for="includeNumbers">Include Numbers</label>
+              <input type="checkbox" id="includeNumbers">
             </div>
             <div class="include-symbols">
               <label for="includeSymbols">Include Symbols</label>
-              <input type="checkbox">
+              <input type="checkbox" id="includeSymbols">
             </div>
           </div>
          </form>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn">Generate <i class="fas fa-key"></i> Password</button>
         </div>
       </div>
     </div>
