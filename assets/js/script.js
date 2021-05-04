@@ -1,107 +1,45 @@
 const characterAmountRange = document.getElementById('characterAmountRange');
 const characterAmountNumber = document.getElementById('characterAmountNumber');
 
+const includeUppercaseElement = document.getElementById('includeUppercase');
+const includeNumbersElement = document.getElementById('includeNumbers');
+const includeSymbolsElement = document.getElementById('includeSymbols');
+
+// https://www.petefreitag.com/cheatsheets/ascii-codes/
+// grab characters from ascii. ^^^cheatsheet above^^^
+const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90);
+console.log(UPPERCASE_CHAR_CODES);
+const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122);
+console.log(LOWERCASE_CHAR_CODES);
+const NUMBER_CHAR_CODES = arrayFromLowToHigh(48, 57);
+console.log(NUMBER_CHAR_CODES);
+//symbols are scattered, so we can concatinate the different sections
+const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
+  arrayFromLowToHigh(58, 64)
+).concat(
+  arrayFromLowToHigh(91, 96)
+).concat(
+  arrayFromLowToHigh(123, 126)
+);
+console.log(SYMBOL_CHAR_CODES);
+
+function arrayFromLowToHigh(low, high) {
+  const array = []
+  for (let i = low; i <= high; i++) {
+    array.push(i)
+  }
+  return array;
+}
+
+/// syncs the range input slider amount together with the number input
+function syncCharacterAmount(e) {
+  const value = e.target.value
+  characterAmountNumber.value = value
+  characterAmountRange.value = value
+}
 characterAmountNumber.addEventListener('input', syncCharacterAmount);
 characterAmountRange.addEventListener('input', syncCharacterAmount);
 
-   // syncs the range input slider amount together with the number input
-  function syncCharacterAmount(e) {
-    const value = e.target.value
-    characterAmountNumber.value = value
-    characterAmountRange.value = value
-  }
-  
-// Array of special characters to be included in password
-var specialCharacters = [
-    '@',
-    '%',
-    '+',
-    '\\',
-    '/',
-    "'",
-    '!',
-    '#',
-    '$',
-    '^',
-    '?',
-    ':',
-    ',',
-    ')',
-    '(',
-    '}',
-    '{',
-    ']',
-    '[',
-    '~',
-    '-',
-    '_',
-    '.'
-  ];
-  
-  // Array of numeric characters to be included in password
-  var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  
-  // Array of lowercase characters to be included in password
-  var lowerCasedCharacters = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z'
-  ];
-  
-  // Array of uppercase characters to be included in password
-  var upperCasedCharacters = [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'G',
-    'H',
-    'I',
-    'J',
-    'K',
-    'L',
-    'M',
-    'N',
-    'O',
-    'P',
-    'Q',
-    'R',
-    'S',
-    'T',
-    'U',
-    'V',
-    'W',
-    'X',
-    'Y',
-    'Z'
-  ];
-
-  
 // Function to prompt user for password options
 function getPasswordOptions() {
     // Variable to store length of password from user input
