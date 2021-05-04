@@ -11,11 +11,8 @@ const passwordDisplay = document.getElementById('passwordDisplay')
 // https://www.petefreitag.com/cheatsheets/ascii-codes/
 // grab characters from ascii. ^^^cheatsheet above^^^
 const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90);
-console.log(UPPERCASE_CHAR_CODES);
 const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122);
-console.log(LOWERCASE_CHAR_CODES);
 const NUMBER_CHAR_CODES = arrayFromLowToHigh(48, 57);
-console.log(NUMBER_CHAR_CODES);
 //symbols are scattered, so we can concatinate the different sections
 const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
   arrayFromLowToHigh(58, 64)
@@ -24,7 +21,6 @@ const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
 ).concat(
   arrayFromLowToHigh(123, 126)
 );
-console.log(SYMBOL_CHAR_CODES);
 
 function arrayFromLowToHigh(low, high) {
   const array = []
