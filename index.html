@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Brandon's Password Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Play&family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../My-password-maker/assets/css/style.css" />
   </head>
   <body>
@@ -22,13 +24,14 @@
           ></textarea>
           <form id="passwordGeneratorForm" class="card-form">
             <div class="number-of-characters">
-              <label for="characterAmountNumber">Number of Characters</label>
-            </div>
+              <label for="characterAmountNumber">Number of Characters</label>  
             <div class="number-slider">
               <input type="range" min="8" max="128" value="8" id="characterAmountRange"/>
               <input type="number" min="8" max="128" value="8" id="characterAmountNumber"/>
             </div>
+          </div>
             <div class="checkboxes">
+              <div class="include-uppercase">
               <label for="includeUppercase">Include Uppercase</label>
               <input type="checkbox">
             </div>
@@ -40,10 +43,11 @@
               <label for="includeSymbols">Include Symbols</label>
               <input type="checkbox">
             </div>
-          </form>
+          </div>
+         </form>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Make password</button>
+          <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>

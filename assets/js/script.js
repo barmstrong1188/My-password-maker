@@ -4,7 +4,7 @@ const characterAmountNumber = document.getElementById('characterAmountNumber');
 characterAmountNumber.addEventListener('input', syncCharacterAmount);
 characterAmountRange.addEventListener('input', syncCharacterAmount);
 
-   // syncs the range input amount together with the number input
+   // syncs the range input slider amount together with the number input
   function syncCharacterAmount(e) {
     const value = e.target.value
     characterAmountNumber.value = value
