@@ -17,13 +17,14 @@
       </header>
       <div class="card">
         <div class="card-body">
+          <form id="passwordGeneratorForm" class="card-form">
           <textarea
             readonly
-            id="password"
+            id="passwordDisplay"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-          <form id="passwordGeneratorForm" class="card-form">
+          
             <div class="number-of-characters">
               <label for="characterAmountNumber">Number of Characters</label>  
             <div class="number-slider">
@@ -45,11 +46,12 @@
               <input type="checkbox" id="includeSymbols">
             </div>
           </div>
-         </form>
+         
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate <i class="fas fa-key"></i> Password</button>
+          <button type="submit" class="btn">Generate <i class="fas fa-key"></i> Password</button>
         </div>
+      </form>
       </div>
     </div>
     <script src="../My-password-maker/assets/js/script.js"></script>
