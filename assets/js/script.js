@@ -48,7 +48,7 @@ form.addEventListener('submit', e => {
     speed: 100
   });
   text.start();
-  text.reveal(1000);
+  text.reveal(1200);
 });
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
