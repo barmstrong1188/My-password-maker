@@ -292,6 +292,18 @@ button[disabled] {
   }
 }
 
+  @media (max-width: 387px) {
+    
+    .character-amount-input {
+      margin-right: 7px;
+      margin-left: 15px;
+    }
+
+    .number-slider {
+      margin-right: -7px;
+    }
+  }
+
   @media (max-width: 360px) {
     
     .btn {
