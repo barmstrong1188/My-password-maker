@@ -42,6 +42,13 @@ form.addEventListener('submit', e => {
   const includeSymbols = includeSymbolsElement.checked;
   const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols);
   passwordDisplay.innerText = password;
+  const text = baffle('.random-password');
+  text.set({
+    characters: '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+    speed: 100
+  });
+  text.start();
+  text.reveal(1000);
 });
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
