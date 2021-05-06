@@ -7,7 +7,7 @@
 - [Description](#description)
 * [Demo](#Demo)
 + [Technologies Used](#technologies-used)
-+ [DevTools Lighthouse Scores](#devtools-lighthouse-scores)
+- [DevTools Lighthouse Scores](#devtools-lighthouse-scores)
 ## Link to Deployed App:
 [Brandon's Password Maker](https://barmstrong1188.github.io/My-password-maker/)
 
