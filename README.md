@@ -7,6 +7,7 @@
 - [Description](#description)
 * [Demo](#Demo)
 + [Technologies Used](#technologies-used)
++ [DevTools Lighthouse Scores](#devtools-lighthouse-scores)
 ## Link to Deployed App:
 [Brandon's Password Maker](https://barmstrong1188.github.io/My-password-maker/)
 
@@ -20,9 +21,13 @@ This app creates a randomly generated password based on the credentials provided
 <br><br>
 
 ## Demo
-![PWGenGif](https://user-images.githubusercontent.com/65680645/117247574-80486200-ae0c-11eb-8288-8150e88ac6c6.gif)
+![PWGeneratorGif](https://user-images.githubusercontent.com/65680645/117263055-e12d6580-ae1f-11eb-997e-95ed8be36546.gif)
 
 ## Techonologies Used
 -Javascript <br>
 -CSS <br>
 -HTML 
+
+## DevTools Lighthouse Scores
+![PWGen-accessibility-final-improvements](https://user-images.githubusercontent.com/65680645/117263315-2782c480-ae20-11eb-9c86-0107fc1fe002.png)
+
