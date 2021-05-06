@@ -193,7 +193,7 @@ input::-webkit-inner-spin-button {
 }
 
 .character-amount-input {
-  margin-left: 2rem;
+  margin-left: 60px;
   width: 2.18rem;
   height: 1.5rem;
   border: 2px dashed #c0c7cf;
@@ -345,17 +345,19 @@ button[disabled] {
 }
 
 /* MEDIA QUERIES START HERE */
+/*SCREENS UP TO 690px*/
 @media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
   #password {
     font-size: 1rem;
   }
 }
+/* SCREENS UP TO 550px */
+@media (max-width: 550px) {
+  .character-amount-input {
+    margin-left: 50px;
+  }
+}
+
 /*SCREENS UP TO 500px*/
 @media (max-width: 500px) {
   #passwordDisplay {
@@ -372,6 +374,23 @@ button[disabled] {
     align-items: center;
   } 
 }
+
+/*SCREENS UP TO 465px*/
+@media (max-width: 465px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+}
+
+/* SCREENS UP TO 450px */
+@media (max-width: 450px) {
+  .character-amount-input {
+    margin-left: 40px;
+  }
+}
+
 /*SCREENS UP TO 405px*/
 @media (max-width: 405px) {
   .btn {
@@ -384,32 +403,54 @@ button[disabled] {
   }
 
   .character-amount-input {
-    margin-left: 20px;
-  }
-
-  .card-form {
-    font-size:13px;
+    margin-left: 40px;
   }
 }
+
 /*SCREENS UP TO 387px*/
   @media (max-width: 387px) {
     .character-amount-input {
       margin-right: 7px;
-      margin-left: 10px;
+      margin-left: 30px;
     }
 
     .number-slider {
       margin-right: -7px;
     }
   }
+
 /*SCREENS UP TO 360px*/
   @media (max-width: 360px) {
     .btn {
       font-size: 12px;
     }
-    
+
     .character-amount-range {
       width: 6rem;
+    }
+
+    .character-amount-input {
+      margin-left: 30px;
+    }
+  }
+
+ /*SCREENS UP TO 320px*/
+  @media (max-width: 325px) {
+    .character-amount-input {
+      margin-left: 25px;
+    }
+    .card-form {
+      font-size: 12px;
+    }
+  }
+
+  /*SCREENS UP TO 280px*/
+  @media (max-width: 300px) {
+    .character-amount-range {
+      width: 4rem;
+    }
+    .character-amount-input {
+      margin-left: 20px;
     }
   }
 
