@@ -86,10 +86,19 @@ position: relative;
   bottom: 3px;
   right: 3px;
   background-image: linear-gradient(to top right, rgb(45, 158, 119),rgb(34, 44, 133));
+  background-size: 250%;
+  background-position: right;
+  transition: background-position 500ms;
   color: rgb(236, 229, 229);
   border: none;
   border-radius: 3px;
   padding-left: none;
+}
+
+#copy-button:hover {
+  background-position: left;
+  cursor: pointer;
+  
 }
 /* PASSWORD TEXT AREA ENDS HERE */
 
