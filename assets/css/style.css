@@ -196,6 +196,11 @@ input::-webkit-inner-spin-button {
   margin-left: 2rem;
   width: 2rem;
   height: 1.5rem;
+  border: 2px dashed #c0c7cf;
+  border-radius: 4px;
+  font-family: 'Play';
+  font-weight: bold;
+  color:rgb(121, 122, 122);
 }
 /* RANGE SLIDER ENDS HERE*/
 
@@ -213,12 +218,68 @@ input::-webkit-inner-spin-button {
 .include-uppercase,
 .include-symbols {
   margin-top: 15px;
+  position: relative;
+}
+
+.checkbox-container label {
+  margin-right: auto;
+  margin-left: -20px;
+}
+
+.checkbox-container label::before {
+  content: '';
+  border: 2px dashed #c0c7cf;
+  border-radius: 4px;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 1px;
+  margin-right: -20px;
+}
+
+.checkbox-container input[type=checkbox]:checked + label::before {
+  content: '\002714';
+  height: 20px;
+  width: 20px;
+  box-shadow: 0 0 5px rgb(180, 177, 177);
+  background-image: linear-gradient(to top right, rgb(45, 158, 119),rgb(34, 44, 133));
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.checkbox-container input[type=checkbox]:disabled label::before {
+  background-color: #ccc;
+  border-color: #999;
+}
+
+.checkbox-container :hover::before {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(180, 177, 177);
+  background-image: linear-gradient(to top right, rgb(45, 158, 119),rgb(34, 44, 133));
+  border: 1px solid white;
+}
+
+.checkboxes input[type=checkbox] {
+  opacity: 0;
+}
+
+input[type=checkbox]:hover {
+  cursor: pointer;
 }
 
 .checkboxes {
+  display: flex;
+  flex-direction: column;
   margin-top: -10px;
   margin-bottom: 20px;
+  margin-right: 21px;
+  
 }
+/* CHECKBOXES END HERE */
 
 /* CARD FOOTER STARTS HERE*/
 .card-footer {
@@ -243,7 +304,7 @@ input::-webkit-inner-spin-button {
   font-family: 'Zen Dots';
   border: none;
   background-image: linear-gradient(to right, rgb(45, 158, 119),rgb(34, 44, 133),rgb(45, 158, 119));
-  background-size: 200%;
+  background-size: 300%;
   background-position: left;
   border-radius: 25px;
   box-shadow: rgba(143, 139, 139, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
