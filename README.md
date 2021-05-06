@@ -20,7 +20,7 @@ This app creates a randomly generated password based on the credentials provided
 <br><br>
 
 ## Demo
-![Animation](https://user-images.githubusercontent.com/65680645/116979105-9500ea80-ac92-11eb-862d-2be9674971ee.gif)
+![PWGenGif](https://user-images.githubusercontent.com/65680645/117247574-80486200-ae0c-11eb-8288-8150e88ac6c6.gif)
 
 ## Techonologies Used
 -Javascript <br>
