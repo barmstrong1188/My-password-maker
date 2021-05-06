@@ -19,7 +19,9 @@
       </header>
       <div class="card">
         <div class="card-body">
+         
           <form id="passwordGeneratorForm" class="card-form">
+            <div class="text-container">
           <textarea
             readonly
             class="random-password"
@@ -27,7 +29,7 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-          
+          <button type="button" onClick=`${copyText()}` data-clipboard-target="#passwordDisplay" id="copy-button"><i class="fas fa-copy"></i></button></div>
             <div class="number-of-characters">
               <label for="characterAmountNumber characterAmountRange">Number of Characters</label>  
             <div class="number-slider">

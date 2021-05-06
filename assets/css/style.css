@@ -48,6 +48,26 @@ header {
   min-height: 100px;
 }
 
+.copy-button {
+  margin-top: -150px;
+  margin-bottom: 15px;
+}
+
+.text-container {
+position: relative;
+}
+
+#copy-button {
+  position: absolute;
+  bottom: 3px;
+  right: 2px;
+  background-image: linear-gradient(to top right, rgb(45, 158, 119),rgb(34, 44, 133));
+  color: rgb(236, 229, 229);
+  border: none;
+  border-radius: 2px;
+  padding-left: none;
+}
+
 .card-form {
   font-family: 'Play', sans-serif;
   margin-top: 30px;
@@ -78,7 +98,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 26px;
   width: 16px;
   border-radius: 3px;
-  background-image: linear-gradient(to right, rgb(45, 158, 119),rgb(34, 44, 133));
+  background-image: linear-gradient(to top right, rgb(45, 158, 119),rgb(34, 44, 133));
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -14px;

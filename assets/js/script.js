@@ -47,6 +47,14 @@ form.addEventListener('submit', e => {
   text.reveal(1200);
 });
 
+function copyText() {
+  const passwordText = document.getElementById("passwordDisplay");
+  passwordText.select("#passwordDisplay");
+  passwordText.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  alert("COPIED PASSWORD: " + passwordText.value);
+}
+
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
   let charCodes = LOWERCASE_CHAR_CODES;
   if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES);
