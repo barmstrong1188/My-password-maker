@@ -194,13 +194,13 @@ input::-webkit-inner-spin-button {
 
 .character-amount-input {
   margin-left: 2rem;
-  width: 2rem;
+  width: 2.18rem;
   height: 1.5rem;
   border: 2px dashed #c0c7cf;
   border-radius: 4px;
   font-family: 'Play';
   font-weight: bold;
-  color:rgb(121, 122, 122);
+  color:rgb(37, 37, 37);
 }
 /* RANGE SLIDER ENDS HERE*/
 
@@ -256,7 +256,7 @@ input::-webkit-inner-spin-button {
   border-color: #999;
 }
 
-.checkbox-container :hover::before {
+.checkbox-container label:hover::before {
   cursor: pointer;
   box-shadow: 0 0 5px rgb(180, 177, 177);
   background-image: linear-gradient(to top right, rgb(45, 158, 119),rgb(34, 44, 133));
