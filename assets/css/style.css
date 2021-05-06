@@ -188,7 +188,7 @@ input::-webkit-inner-spin-button {
   width: 2rem;
   height: 1.5rem;
 }
-/* NUMBER SLIDER ENDS HERE*/
+/* RANGE SLIDER ENDS HERE*/
 
 /*  CHECKBOXES START HERE */
 .number-of-characters,
@@ -210,7 +210,6 @@ input::-webkit-inner-spin-button {
   margin-top: -10px;
   margin-bottom: 20px;
 }
-/*CHECKBOXES END HERE*/
 
 /* CARD FOOTER STARTS HERE*/
 .card-footer {
@@ -283,9 +282,8 @@ button[disabled] {
     font-size: 1rem;
   }
 }
-
+/*SCREENS UP TO 500px*/
 @media (max-width: 500px) {
-
   #passwordDisplay {
     font-size: 13px;
   }
@@ -300,9 +298,8 @@ button[disabled] {
     align-items: center;
   } 
 }
-
+/*SCREENS UP TO 405px*/
 @media (max-width: 405px) {
-
   .btn {
     margin-top: 12px;
     font-size: 16px;
@@ -320,9 +317,8 @@ button[disabled] {
     font-size:13px;
   }
 }
-
+/*SCREENS UP TO 387px*/
   @media (max-width: 387px) {
-    
     .character-amount-input {
       margin-right: 7px;
       margin-left: 15px;
@@ -332,9 +328,8 @@ button[disabled] {
       margin-right: -7px;
     }
   }
-
+/*SCREENS UP TO 360px*/
   @media (max-width: 360px) {
-    
     .btn {
       font-size: 12px;
     }
