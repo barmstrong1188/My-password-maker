@@ -21,7 +21,7 @@ This app creates a randomly generated password based on the credentials provided
 <br><br>
 
 ## Demo
-![PWGeneratorGif](https://user-images.githubusercontent.com/65680645/117263055-e12d6580-ae1f-11eb-997e-95ed8be36546.gif)
+![PWGenTheeGif](https://user-images.githubusercontent.com/65680645/117288567-a2a4a480-ae39-11eb-8303-e10eebf9204d.gif)
 
 
 ## DevTools Lighthouse Scores
