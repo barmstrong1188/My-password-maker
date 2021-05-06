@@ -30,6 +30,7 @@ header {
   color: hsl(0, 0%, 100%);
 }
 
+/* CARD STARTS HERE */
 .card {
   background-color: hsl(0, 0%, 42%);
   border-radius: 5px;
@@ -47,7 +48,30 @@ header {
 .card-body {
   min-height: 100px;
 }
+/* PASSWORD TEXT AREA */
+#passwordDisplay {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-family: 'Zen Dots';
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: vertical;
+  overflow: hidden;
+}
 
+/* COPY BUTTON */
 .copy-button {
   margin-top: -150px;
   margin-bottom: 15px;
@@ -60,19 +84,21 @@ position: relative;
 #copy-button {
   position: absolute;
   bottom: 3px;
-  right: 2px;
+  right: 3px;
   background-image: linear-gradient(to top right, rgb(45, 158, 119),rgb(34, 44, 133));
   color: rgb(236, 229, 229);
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   padding-left: none;
 }
+/* PASSWORD TEXT AREA ENDS HERE */
 
 .card-form {
   font-family: 'Play', sans-serif;
   margin-top: 30px;
 }
 
+/* RANGE SLIDER STYLING STARTS HERE */
 input[type=range] {
   -webkit-appearance: none;
   margin: 18px 0;
@@ -162,7 +188,9 @@ input::-webkit-inner-spin-button {
   width: 2rem;
   height: 1.5rem;
 }
+/* NUMBER SLIDER ENDS HERE*/
 
+/*  CHECKBOXES START HERE */
 .number-of-characters,
 .include-numbers,
 .include-uppercase,
@@ -182,7 +210,9 @@ input::-webkit-inner-spin-button {
   margin-top: -10px;
   margin-bottom: 20px;
 }
+/*CHECKBOXES END HERE*/
 
+/* CARD FOOTER STARTS HERE*/
 .card-footer {
   text-align: center;
 }
@@ -241,28 +271,7 @@ button[disabled] {
   float: right;
 }
 
-#passwordDisplay {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-family: 'Zen Dots';
-  font-size: 15px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: vertical;
-  overflow: hidden;
-}
-
+/* MEDIA QUERIES START HERE */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
