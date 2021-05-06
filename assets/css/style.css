@@ -251,6 +251,10 @@ input::-webkit-inner-spin-button {
   color: white;
 }
 
+.checkbox-container input[type=checkbox]::-ms-check + label::before {
+  color: white;
+}
+
 .checkbox-container input[type=checkbox]:disabled label::before {
   background-color: #ccc;
   border-color: #999;
@@ -391,7 +395,7 @@ button[disabled] {
   @media (max-width: 387px) {
     .character-amount-input {
       margin-right: 7px;
-      margin-left: 15px;
+      margin-left: 10px;
     }
 
     .number-slider {
